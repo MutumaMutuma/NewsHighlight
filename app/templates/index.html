@@ -4,15 +4,19 @@
     {% block content %}
        <h1> {{ title }} </h1>
        <ul>
-       
+    <div class="container">  
+       <div class="row">
        {% for item in enter%}
-       <div class="thumbnail">
-       <li style="color:#3a4a84; font-size:25px;">{{item.name}}</li>
-       <p>{{ item.description }}</p>
-       <button style="background-color:#5f7add;" class="btn btn">Visit</button>
+       <div class="col-md-4">
+        <div class="thumbnail">
+            <li style="color:#3a4a84; font-size:20px;">{{item.name}}</li>
+            <p>{{ item.description }}</p>
+            <button style="background-color:#5f7add;" class="btn btn">Visit</button>
+        </div>
        </div>
        {% endfor %}
-       
+       </div>
+    </div> 
        </ul>
     {% endblock %}
     </body>
