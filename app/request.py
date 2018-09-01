@@ -1,7 +1,9 @@
 from app import app
 import urllib.request,json
 from .models import source
+
 Source =source.Source
+Articles = source.Articles
 
 # Getting api key
 api_key = app.config['SOURCE_API_KEY']
@@ -9,6 +11,7 @@ api_key = app.config['SOURCE_API_KEY']
 #Getting api key
 base_url = app.config['SOURCE_API_BASE_URL']
 
+articles_url = app.config['ARTICLES_API_BASE_URL']
 def get_sources(name):
     '''
     Function that gets the json response to our url request
@@ -50,3 +53,4 @@ def process_results(source_list):
             source_results.append(source_object)
 
     return source_results
+
