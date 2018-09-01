@@ -1,6 +1,7 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro%}
     <body>
+    {% block content %}
        <h1> {{ title }} </h1>
        <ul>
        
@@ -12,4 +13,5 @@
        {% endfor %}
        
        </ul>
+    {% endblock %}
     </body>
