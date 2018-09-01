@@ -3,7 +3,7 @@
     <body>
     {% block content %}
        <h1> {{ title }} </h1>
-       <ul>
+       <ul style="decoration:none;">
     <div class="container-fluid">  
        <div class="row">
        {% for item in enter%}
@@ -11,7 +11,7 @@
         <div class="thumbnail">
             <li style="color:#3a4a84; font-size:20px;">{{item.name}}</li>
             <p>{{ item.description }}</p>
-            <button style="background-color:#6f8bf2;" class="btn btn">Visit</button>
+            <button style="background-color:#47b78c; border:1px solid black;" class="btn btn">Visit</button>
         </div>
        </div>
        {% endfor %}

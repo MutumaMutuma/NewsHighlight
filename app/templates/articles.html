@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+    <body>
+    {% block content %}
+       <h1> {{ title }} </h1>
+       <ul style="decoration:none;">
+    <div class="container-fluid">  
+       <div class="row">
+       {% for item in news%}
+       <div class="col-md-4">
+        <div class="thumbnail">
+            <p>{{ item.description }}</p>
+        </div>
+       </div>
+       {% endfor %}
+       </div>
+    </div> 
+       </ul>
+    {% endblock %}
+    </body>

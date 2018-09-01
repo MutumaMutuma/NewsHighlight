@@ -8,3 +8,11 @@
     </ul>
 </div>
 {% endmacro %}
+
+{% macro displayarticlesList(articles_list) %}
+    <ul>
+    {% for articles in articles_list %}
+        <li>{{ article.title}}</li>
+    {% endfor %}
+    </ul>
+{% endmacro %}
