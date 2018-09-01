@@ -9,7 +9,7 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    
+    enter = get_sources('general')
     
     title = 'Welcome to The best News Website ever'
-    return render_template('index.html', title = title)
+    return render_template('index.html', title = title, enter=enter)

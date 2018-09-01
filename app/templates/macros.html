@@ -1,7 +1,7 @@
 {% macro displaySourceList(source_list) %}
-
+    <ul>
     {% for source in source_list %}
         <li>{{ source.title}}</li>
     {% endfor %}
-
+    </ul>
 {% endmacro %}

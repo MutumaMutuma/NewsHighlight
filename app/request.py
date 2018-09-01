@@ -23,8 +23,8 @@ def get_sources(name):
 
         source_results = None
 
-        if get_sources_response['results']:
-            source_results_list = get_sources_response['results']
+        if get_sources_response["sources"]:
+            source_results_list = get_sources_response["sources"]
             source_results = process_results(source_results_list)
     return source_results
 
@@ -45,7 +45,7 @@ def process_results(source_list):
         name = source_item.get('name')
         description = source_item.get('description')
 
-        if urllib:
+        if name:
             source_object = Source (id, name, description)
             source_results.append(source_object)
 
