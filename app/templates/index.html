@@ -2,10 +2,13 @@
     <body>
        <h1> {{ title }} </h1>
        <ul>
-       <div class="card">
+       
        {% for item in enter%}
-       <li>{{item.name}}</li>
-       {% endfor %}
+       <div class="panel">
+       <li style="color:green;">{{item.name}}</li>
+       <p>{{ item.description }}</p>
        </div>
+       {% endfor %}
+       
        </ul>
     </body>
