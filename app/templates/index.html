@@ -6,9 +6,10 @@
        <ul>
        
        {% for item in enter%}
-       <div class="panel">
-       <li style="color:green;">{{item.name}}</li>
+       <div class="thumbnail">
+       <li style="color:#3a4a84; font-size:25px;">{{item.name}}</li>
        <p>{{ item.description }}</p>
+       <button style="background-color:#5f7add;" class="btn btn">Visit</button>
        </div>
        {% endfor %}
        

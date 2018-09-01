@@ -1,7 +1,9 @@
 {% macro displaySourceList(source_list) %}
+<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 movie-card">
     <ul>
     {% for source in source_list %}
         <li>{{ source.title}}</li>
     {% endfor %}
     </ul>
+</div>
 {% endmacro %}
