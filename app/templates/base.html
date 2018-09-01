@@ -5,8 +5,12 @@
         <meta charset="utf-8">
     </head>
     <body>
+    <!--Navbar content-->
+    {% block navbar %}
+        {% include 'navbar.html' %}
+    {% endblock %}    
         <!-- Content block -->
-
+       
         {% block content %}
 
         {% endblock%}
