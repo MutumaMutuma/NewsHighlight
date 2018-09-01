@@ -15,7 +15,7 @@ def index():
     return render_template('index.html', title = title, enter=enter)
 
 
-@app.route('/articles/<int:id>')
+@app.route('/articles/<id>')
 def articles(id):
     '''
     Shows

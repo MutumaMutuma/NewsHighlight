@@ -6,7 +6,7 @@ Source =source.Source
 Articles = source.Articles
 
 # Getting api key
-api_key = app.config['SOURCE_API_KEY']
+api_key = app.config['API_KEY']
 
 #Getting api key
 base_url = app.config['SOURCE_API_BASE_URL']
@@ -64,9 +64,10 @@ def get_articles(id):
         get_articles_data = url.read()
         get_articles_response = json.loads(get_articles_data)
 
+        print(get_articles_response)
         articles_results = None
 
-        print(get_articles_response)
+        
         if get_articles_response['articles']:
             articles_results_list = get_articles_response['articles']
             articles_results = process_results(articles_results_list)
@@ -98,7 +99,7 @@ def receive_results(articles_list):
         publishedAt = articles_item.get('publishedAt')
         url = articles_item.get('url')
 
-        if title:
-            articles_object = Articles (title,id, author, description, urlToImage, publishedAt, url)
-            articles_results.append(articles_object)
+       
+        articles_object = Articles (title,id, author, description, urlToImage, publishedAt, url)
+        articles_results.append(articles_object)
     return articles_results
