@@ -75,7 +75,7 @@ def get_articles(title):
 
 def receive_results(articles_list):
     '''
-    Function  that processes the articles result and transform them to a list of Objects
+    Function that processes the articles result and transform them to a list of Objects
 
     Args:
         articles_list: A list of dictionaries that contain source details
