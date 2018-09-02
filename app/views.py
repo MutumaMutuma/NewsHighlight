@@ -21,7 +21,7 @@ def articles(id):
     Shows
     '''
 
-    articles = get_articles(id)
+    news = get_articles(id)
 
-    title = "Top Headling"
-    return render_template('articles.html', title = title, news = articles)
+    title = "Top Headlines"
+    return render_template('articles.html', title = title, news = news)

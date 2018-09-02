@@ -1,20 +1,24 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro%}
-    <body>
-    {% block content %}
-       <h1> {{ title }} </h1>
-       <ul style="decoration:none;">
-    <div class="container-fluid">  
-       <div class="row">
-       {% for item in articles%}
-       <div class="col-md-4">
-        <div class="thumbnail">
-            <p>{{ item.description }}</p>
+<body>
+{% block content %}
+    <h1> {{ title }} </h1>
+<div class="container-fluid">
+    <div class="row">
+        {% for article in news %}
+        <div class="col-md-4">
+            <div class="panel panel-default">
+            
+                <img src="{{ article.urlToImage}}" height="200px" width="400px">
+                <h4> {{article.description}} </h4>
+                <p> Author: {{article.author}} </p>   
+                <p> Published on : {{article.publishedAt}} </p>
+                <a href="{{ article.url}}"> <button class="btn btn-warning btn-sm" >View full story</button> </a>
+                   
+            </div> 
         </div>
-       </div>
-       {% endfor %}
-       </div>
-    </div> 
-       </ul>
-    {% endblock %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
     </body>

@@ -70,7 +70,7 @@ def get_articles(id):
         
         if get_articles_response['articles']:
             articles_results_list = get_articles_response['articles']
-            articles_results = process_results(articles_results_list)
+            articles_results = receive_results(articles_results_list)
             print(get_articles_response)
             print(get_articles_response)
             print(articles_results)
@@ -98,8 +98,10 @@ def receive_results(articles_list):
         urlToImage = articles_item.get('urlToImage')
         publishedAt = articles_item.get('publishedAt')
         url = articles_item.get('url')
+        
 
-       
-        articles_object = Articles (title,id, author, description, urlToImage, publishedAt, url)
+        print("etsrdyfu")
+        
+        articles_object = Articles ( title ,id, author, description, urlToImage, publishedAt, url)
         articles_results.append(articles_object)
     return articles_results
