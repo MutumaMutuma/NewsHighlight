@@ -11,7 +11,8 @@
         <div class="thumbnail">
             <li style="color:#3a4a84; list-style-type: none; font-size:20px;">{{item.name}}</li>
             <p>{{ item.description }}</p>
-            <button href="" style="background-color:#47b78c; border:1px solid black;" class="btn btn">Visit</button>
+            <a href="/articles/{{item.id}}&40">View Articles</a>
+            <button href="" style="background-color:#859DDB; border:1px solid black;" class="btn btn">Visit</button>
         </div>
        </div>
        {% endfor %}
