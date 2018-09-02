@@ -2,6 +2,8 @@
 {% import 'macros.html' as macro%}
     <body>
     {% block content %}
+    <marquee style=" font-size:20px; font-family: 'Handlee', cursive;">Catch up on the latest news from all around the world <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Breathe-face-smile.svg/220px-Breathe-face-smile.svg.png" height="20px"></marquee>
+
        <ul style="decoration:none;">
     <div style="font-size:15px; color:#2c4f7c;" class="container">  
        <div class="row">
@@ -10,6 +12,7 @@
         <div class="thumbnail">
             <li style="color:#3a4a84; list-style-type: none; font-size:20px;">{{item.name}}</li>
             <hr>
+            
             <h6 style="text-decoration:underline;">More about {{ item.name }}</h6>
             <p style="color:black; font-family: 'Handlee', cursive;">{{ item.description }}</p>
             <hr>
