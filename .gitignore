@@ -1,6 +1,7 @@
 virtual/
 *.pyc
 *.were rejected because the remote contains work that you do
+start.sh
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
