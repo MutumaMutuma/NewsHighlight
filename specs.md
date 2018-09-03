@@ -12,7 +12,6 @@ The Newshighlight project requires a prerequisite understanding of the following
   Got the news api
 
 - [YouTube](www.youtube.com)
-
   got flask tutorials
 
 For assistance kindly contact me at:
