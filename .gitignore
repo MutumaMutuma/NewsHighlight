@@ -1,7 +1,6 @@
 virtual/
 *.pyc
-*.were rejected because the remote contains work that you do 
-j
+*.were rejected because the remote contains work that you do
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

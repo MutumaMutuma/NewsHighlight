@@ -71,10 +71,6 @@ def get_articles(id):
         if get_articles_response['articles']:
             articles_results_list = get_articles_response['articles']
             articles_results = receive_results(articles_results_list)
-            print(get_articles_response)
-            print(get_articles_response)
-            print(articles_results)
-
     return  articles_results
         
 
