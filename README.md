@@ -44,7 +44,7 @@ View the complete site [here](gfhgv )
 
 ## Known bugs
 
-- Lewis Mutuma
+- One cannot find specific categories, in News Highlight only the general news are displayed
 
 ## Contributors
 
