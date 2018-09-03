@@ -88,6 +88,7 @@ def receive_results(articles_list):
     articles_results = []
     for articles_item in articles_list:
         id = articles_item.get('id')
+        blue = articles_item.get('blue')
         title = articles_item.get('title')
         author = articles_item.get('author')
         description = articles_item.get('description')
@@ -98,6 +99,6 @@ def receive_results(articles_list):
 
         print("etsrdyfu")
         
-        articles_object = Articles ( title ,id, author, description, urlToImage, publishedAt, url)
+        articles_object = Articles ( blue, id, title , author, description, urlToImage, publishedAt, url)
         articles_results.append(articles_object)
     return articles_results
