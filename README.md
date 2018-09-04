@@ -27,10 +27,10 @@ View the complete site [here](https://news-highlights5.herokuapp.com/)
 
 ## Technologies Used
 
-    - Python 3.6
-    - Flask Framework
-    - HTML, CSS and Bootstrap
-    - JavaScript
+    -[x]Python 3.6
+    -[x]Flask Framework
+    -[x] HTML, CSS and Bootstrap
+    -[x] JavaScript
 
 ## Set-up and Installation
 

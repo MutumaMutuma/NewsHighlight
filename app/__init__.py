@@ -6,7 +6,7 @@ from flask_bootstrap import Bootstrap
 bootstrap = Bootstrap()
 
 def create_app(config_name):
-#We create a create_app() function that takes the configuration setting key as an argument. 
+    #We create a create_app() function that takes the configuration setting key as an argument. 
     
 # Initializing application
     app = Flask(__name__)
