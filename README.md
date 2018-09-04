@@ -19,7 +19,7 @@ This webpage will get you caught up on current affairs from all around the world
 
 ## View Live Site here
 
-View the complete site [here](gfhgv )
+View the complete site [here](https://news-highlights5.herokuapp.com/)
 
 ### Contact Information
 
