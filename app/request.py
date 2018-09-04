@@ -21,9 +21,10 @@ def get_sources(name):
 
 
     with urllib.request.urlopen(get_sources_url) as url:
+        print("ew")
         get_sources_data = url.read()
         get_sources_response = json.loads(get_sources_data)
-
+        print(get_sources_response)
         source_results = None
         if get_sources_response["sources"]:
             source_results_list = get_sources_response["sources"]
@@ -47,9 +48,9 @@ def process_results(source_list):
         name = source_item.get('name')
         description = source_item.get('description')
 
-        if name:
-            source_object = Source (id, name, description)
-            source_results.append(source_object)
+        
+        source_object = Source (id, name, description)
+        source_results.append(source_object)
 
     return source_results
 
@@ -95,9 +96,6 @@ def receive_results(articles_list):
         urlToImage = articles_item.get('urlToImage')
         publishedAt = articles_item.get('publishedAt')
         url = articles_item.get('url')
-        
-
-        print("etsrdyfu")
         
         articles_object = Articles ( blue, id, title , author, description, urlToImage, publishedAt, url)
         articles_results.append(articles_object)
