@@ -19,7 +19,7 @@ This webpage will get you caught up on current affairs from all around the world
 
 ## View Live Site here
 
-View the complete site [here](https://news-highlights5.herokuapp.com/)
+[x]View the complete site [here](https://news-highlights5.herokuapp.com/)
 
 ### Contact Information
 
@@ -27,10 +27,10 @@ View the complete site [here](https://news-highlights5.herokuapp.com/)
 
 ## Technologies Used
 
-    -[x]Python 3.6
-    -[x]Flask Framework
-    -[x] HTML, CSS and Bootstrap
-    -[x] JavaScript
+    - Python 3.6
+    - Flask Framework
+    - HTML, CSS and Bootstrap
+    - JavaScript
 
 ## Set-up and Installation
 
